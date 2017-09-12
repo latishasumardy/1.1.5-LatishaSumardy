@@ -43,9 +43,9 @@ public class SciFiName
         String lastnameLetter = scifiLast.substring(0,1).toUpperCase();
         scifiLast = lastnameLetter + scifiLast.substring(1);
         String scifiName = (scifiFirst + " " + scifiLast).toLowerCase();
-        int location = (int)(Math.random() * (relativeName1.length()-1));
+        int location = (int)(Math.random() * (relativeName1.length()-1) + 1);
         String origin1 = relativeName1.substring(location);
-        int location2 = (int)(Math.random() * (relativeName2.length()-1));
+        int location2 = (int)(Math.random() * (relativeName2.length()-1) + 1);
         String origin2 = relativeName2.substring(location2);
         String originPlace = (origin1 + origin2).toLowerCase();
         String originLetter = originPlace.substring(0,1).toUpperCase();
